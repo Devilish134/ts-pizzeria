@@ -1,3 +1,4 @@
+import Cart from '../../features/Cart/Cart';
 import './NavBar.scss';
 
 const NavBar = () => {
@@ -9,6 +10,7 @@ const NavBar = () => {
           the best pizza in town!
         </p>
       </div>
+      <Cart />
     </header>
   );
 };

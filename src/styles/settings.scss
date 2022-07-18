@@ -1,5 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Bona+Nova&family=Italiana&family=Vesper+Libre:wght@700&display=swap');
 
+// fonts
 $font-title: 'Vesper Libre', serif;
 $font-subtitle: 'Italiana', serif;
 $font-text: 'Vesper Libre', serif;
+
+// Font colors
+$navFont-color: rgb(209, 207, 207);
+$cart-font: rgb(28, 157, 243);
+
+// background colors
+$navBack-color: rgb(19, 17, 170);
+$cart-background: rgb(209, 207, 207);
+
+@mixin flex(
+  $flex-direction,
+  $align-items,
+  $justify-content
+) {
+  display: flex;
+  flex-direction: $flex-direction;
+  align-items: $align-items;
+  justify-content: $justify-content;
+}
+
+//accordion
+@mixin accordion-closed() {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.25s ease-in-out;
+  max-height: 0;
+  transform: translate(0, 50%);
+}
+
+@mixin accordion-open() {
+  transform: translate(0, 0);
+  max-height: 1000px;
+  opacity: 1;
+}

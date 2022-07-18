@@ -4,8 +4,8 @@
   margin-top: 6.4rem;
   display: flex;
   padding: 5px;
-  background: rgb(19, 17, 170);
-  color: rgb(209, 207, 207);
+  background: $navBack-color;
+  color: $navFont-color;
   position: fixed;
   width: 100%;
   z-index: 10;
