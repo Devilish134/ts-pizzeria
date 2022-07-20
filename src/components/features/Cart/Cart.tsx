@@ -1,6 +1,5 @@
 import './Cart.scss';
 import CartContent from './CartContent/CartContent';
-import { useState } from 'react';
 
 const Cart = () => {
   return (
@@ -15,7 +14,6 @@ const Cart = () => {
         <i className='fa fa-chevron-down'></i>
         <i className='fa fa-shopping-cart cart__icon'></i>
       </div>
-      <CartContent />
     </div>
   );
 };
