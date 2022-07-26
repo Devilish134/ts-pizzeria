@@ -1,5 +1,5 @@
 import './Cart.scss';
-import CartContent from './CartContent/CartContent';
+import CartContent from '../CartContent/CartContent';
 
 const Cart = () => {
   return (

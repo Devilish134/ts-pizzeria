@@ -1,5 +1,5 @@
-import { ProductsState } from '../../redux/productsTypes';
+import { ShopState } from '../../redux/mainTypes';
 
 export interface ProductsSliceState {
-  products: ProductsState[];
+  products: ShopState[];
 }

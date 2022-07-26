@@ -4,6 +4,10 @@ import App from './App';
 import store from './redux/store';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
+import {
+  QueryClient,
+  QueryClientProvider,
+} from 'react-query';
 
 const rootElement =
   document.getElementById('root');
@@ -14,12 +18,14 @@ if (!rootElement)
 const root =
   ReactDOMClient.createRoot(rootElement);
 
+const client = new QueryClient();
+
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Provider store={store}>
+      <QueryClientProvider client={client}>
         <App />
-      </Provider>
+      </QueryClientProvider>
     </BrowserRouter>
   </React.StrictMode>
 );
