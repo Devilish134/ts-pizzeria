@@ -1,4 +1,3 @@
-import { type } from 'os';
 import { product } from '../interfaces/product.interface';
 
 //product state

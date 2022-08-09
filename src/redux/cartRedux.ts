@@ -7,13 +7,13 @@ import {
   REMOVE_PRODUCT,
 } from './cartProductTypes';
 //states
-import { ShoppingState } from './mainTypes';
 import { initialState } from './store';
 //toolkit
 import {
   createSlice,
   PayloadAction,
 } from '@reduxjs/toolkit';
+import { ShoppingState } from './mainTypes';
 
 //selectors
 export const getCartProducts = (
