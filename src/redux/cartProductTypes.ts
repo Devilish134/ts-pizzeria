@@ -1,4 +1,3 @@
-import { type } from 'os';
 import { cartProduct } from '../interfaces/cart.interface';
 
 //cart state

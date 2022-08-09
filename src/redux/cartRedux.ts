@@ -39,12 +39,13 @@ export const cartProductsSlice = createSlice({
     ) => {
       state.cartProducts =
         state.cartProducts.filter(
-          ({ id }) => id !== action.payload
+          ({ id }) =>
+            id !== (action.payload as unknown)
         );
     },
   },
 });
 
 // Action creators are generated for each case reducer function
-export const { addProduct /*removeProduct*/ } =
+export const { addProduct, removeProduct } =
   cartProductsSlice.actions;

@@ -1,5 +1,5 @@
-import { ShoppingState } from '../../redux/mainTypes';
+import { CartState } from '../../redux/cartProductTypes';
 
 export interface CartProductsSliceState {
-  cartProducts: ShoppingState[];
+  cartProducts: CartState;
 }

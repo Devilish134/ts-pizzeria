@@ -5,12 +5,12 @@ import { cartProductsSlice } from './cartRedux';
 export const initialState: CartProductsSliceState =
   {
     cartProducts: [
-      /*{
+      {
         id: '1',
         name: 'pizza',
         price: 12,
         amount: 1,
-      },*/
+      },
     ],
   };
 
